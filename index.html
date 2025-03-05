@@ -4,9 +4,95 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/3899116f8c.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="./css/style.css" />
    </head>
    <body>
-    <p class="text-3xl">sad</p>
+      <!-- nav -->
+      <nav class="p-4 px-8 fixed top-0 bg-zinc-50 w-screen rounded-b-3xl opacity-95 z-10">
+         <div class="nav-mobile flex items-center justify-between lg:hidden">
+            <img src="./img/logo.svg" alt="logo" />
+            <img src="./img/bars.svg" alt="logo" class="w-10" />
+         </div>
+         <div class="nav-desktop hidden lg:flex lg:justify-center lg:items-center">
+            <ul class="nav-links lg:flex lg:justify-center lg:items-center space-x-14 uppercase font-extrabold text-sm text-zinc-900 lg:text-lg">
+               <li class="underline p-2 hover:underline hover:text-zinc-500 transition-colors"><a href="#">home</a></li>
+               <li class="p-2 hover:underline hover:text-zinc-500 transition-colors"><a href="#">about</a></li>
+               <li>
+                  <img src="./img/logo.svg" alt="logo" class="px-28" />
+               </li>
+               <li class="p-2 hover:underline hover:text-zinc-500 transition-colors"><a href="#">works</a></li>
+               <li class="p-2 hover:underline hover:text-zinc-500 transition-colors"><a href="#">contact</a></li>
+            </ul>
+         </div>
+      </nav>
+      <!-- main -->
+      <main class="mx-4 mt-24">
+         <section class="container bg-zinc-900 rounded-4xl flex flex-col justify-center items-center text-center text-zinc-50 space-y-8 pt-24 pb-2 px-4 max-w-[1800px]">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold"><span class="block">Visual Designer</span> Based in Indonesia</h1>
+            <p class="max-w-[64ch] text-zinc-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam, quis nostrud.</p>
+            <a href="#" class="btn relative px-8 py-2 font-bold rounded-4xl bg-gradient-to-b from-orange-300 to-orange-500 hover:to-orange-700 transition-colors duration-300 text-sm lg:text-lg flex justify-center items-center"
+               >Contact Me <i class="fa-solid fa-arrow-right ml-2 p-2 bg-zinc-50 text-orange-400 rounded-[50%] text-xs"></i
+            ></a>
+            <div class="images flex flex-col lg:flex-row justify-center items-center gap-6 p-4">
+               <div class="img-left relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image1.png" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-20 text-lg lg:text-2xl font-bold">Branding Project</p>
+               </div>
+               <div class="img-ritght relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image2.png" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-20 text-lg lg:text-2xl font-bold">Branding Project</p>
+               </div>
+            </div>
+         </section>
+         <section class="container flex flex-col justify-center items-center space-y-8 py-16">
+            <p class="text-lg font-light uppercase text-zinc-400 tracking-[6px]">about me</p>
+            <div class="flex flex-col justify-center items-center lg:grid lg:grid-cols-2 py-4 space-y-8 px-10">
+               <img src="./img/avatar.png" alt="Donnie" class="w-56" />
+               <p class="text-2xl text-center lg:text-left lg:text-4xl font-semibold">
+                  Hi I’m Donnie and I am passionate about everything that has to do with Digital Design and Art Direction. I enjoy working with agencies and enthusiastic people who want to solve problems through beautiful designs and experiences.
+               </p>
+            </div>
+         </section>
+         <section class="container bg-zinc-900 rounded-4xl flex flex-col justify-center items-center text-center text-zinc-50 space-y-8 pt-24 pb-2 px-4 max-w-[1800px]">
+            <p class="text-sm lg:text-lg font-light uppercase text-zinc-400 tracking-[6px]">what im doing</p>
+            <ul class="flex flex-col text-2xl md:text-6xl lg:text-8xl space-y-8 px-4 pb-8 uppercase font-semibold">
+               <li class="hover:translate-x-12 transition-transform duration-300 cursor-pointer">branding design</li>
+               <li class="hover:-translate-x-12 transition-transform duration-300 cursor-pointer">ui/ux design</li>
+               <li class="hover:translate-x-12 transition-transform duration-300 cursor-pointer">development</li>
+               <li class="hover:-translate-x-12 transition-transform duration-300 cursor-pointer">digital marketing</li>
+            </ul>
+            <p class="self-start pl-[10%] uppercase tracking-[6px] text-lg lg:text-3xl text-zinc-400">selected projects</p>
+            <div class="images flex flex-col lg:flex-row justify-center items-center gap-6 p-4">
+               <div class="img-left relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image3.jpeg" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-10 text-sm lg:text-lg font-bold">Branding Project</p>
+               </div>
+               <div class="img-left relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image4.jpeg" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-10 text-sm lg:text-lg font-bold">Branding Project</p>
+               </div>
+               <div class="img-left relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image5.jpeg" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-10 text-sm lg:text-lg font-bold">Branding Project</p>
+               </div>
+               <div class="img-left relative rounded-xl lg:rounded-3xl overflow-hidden group">
+                  <img src="./img/image6.jpeg" alt="nothing phone" class="group-hover:scale-105 transition-transform duration-300" />
+                  <p class="absolute bottom-5 left-10 text-sm lg:text-lg font-bold">Branding Project</p>
+               </div>
+            </div>
+         </section>
+         <section class="container flex flex-col justify-center items-center space-y-8 py-16">
+            <p class="text-lg font-light uppercase text-zinc-400 tracking-[6px]">past clients</p>
+            <div class="client relative">
+               <p>01</p>
+               <img src="./img/nEtTgeyrR6OXScPfL9Gs7lkMT2w.avif" alt="">
+               <img src="./img/fb.png" alt="">
+               <p>Through our community practice, helping one of the world’s leading technology companies advise and mentor for an ongoing global initiative that spotlights inspirational YouTube creators.</p>
+            </div>
+         </section>
+      </main>
    </body>
 </html>
+<!-- https://orafolio.framer.website/ -->
